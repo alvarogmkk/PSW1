@@ -1,0 +1,27 @@
+body{
+    background-color: lightblue;
+}
+
+
+P{
+background-color: blueviolet;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 15px;
+}
+
+#p1{
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.c1{
+    background-color: palevioletred;
+    text-align: left;
+    color: black;
+}
+
+.div{
+    width: 500px;
+    left: 50px;
+}
