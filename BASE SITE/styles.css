@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(31, 31, 31);
 }
 
 .interface{
@@ -13,9 +13,115 @@ body{
     margin: auto;
 }
 
-/*===CABEÇALHO===*/
-header{
-    padding: 50px 6%;
+.geral{
+    display: flex;
 }
 
 
+
+
+header{
+    padding: 50px 6%;
+    box-shadow: 0 0 40px 10px #161616;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header a{
+    color: #636363;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .3s;
+
+}
+
+header a:hover{
+    color: rgb(250, 20, 20);
+    transform: scale(1.05);
+    display: inline-block;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 45px;
+}
+
+header.perfil{
+    cursor: pointer;
+}
+
+/*CCCCAAAABBBBEEEÇAAAALLLLHHHOOOOO*/
+
+section.centro{
+    padding: 50px 4%;
+}
+
+section.centro .geral{
+    
+    justify-content: center;
+    gap: 73px;
+}
+
+.centro h1{
+    color: rgb(255, 23, 23);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 1200;
+    margin: 0 10px;
+}
+
+.centro h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 1200;
+    margin: 0 10px;
+    
+}
+
+.centro .texto1 p{
+    color: #636363;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin: 20px 10px;
+
+}
+
+.centro h3{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 1200;
+    margin: 30px 10px;
+    
+}
+
+.centro .imagens img{
+    padding: 0 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+/*MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEIIIIIIIIIIIIIOOOOOOOOOOOOOOOOO*/
+
+footer{
+    padding: 40px 0 ;
+    box-shadow: 0 0 40px 10px #161616;
+}
+
+.interface .rodape p{
+    color: #636363;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+
+}
