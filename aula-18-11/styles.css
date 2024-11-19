@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(80, 121, 255);
+    padding: 3%;
+
+}
+
+h1{
+    text-align: center;
+}
+.cadastro{
+    left: 37%;
+    background-color: rgb(57, 49, 126);
+    padding:2%;
+    position: absolute;
+    border-radius: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+input{
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button{
+    background-color: #405fc2;
+    font-size: 20px;
+    padding: 4%;
+    width: 98%;
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+
+button:hover{
+    background-color: #7996f8;
+    font-family: Verdana;
+    transition: 0.2s;
+}
