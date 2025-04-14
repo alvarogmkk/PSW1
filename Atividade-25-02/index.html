@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #0E0E0E;
+            color: white;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 70px);
+            gap: 10px;
+            justify-content: center;
+        }
+        .cell {
+            width: 70px;
+            border-radius: 12px;
+            height: 70px;
+            background-color: #222;
+            border: 2px solid #222;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cell img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+        .cell.revealed {
+            background-color: #2ecc71;
+        }
+        .cell.mine {
+            background-color: #990000;
+        }
+        .info {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PICAINES</h1>
+    <div class="info">Saldo: <span id="saldo">200</span> Reais</div>
+    <div>
+        <label>Aposta:</label>
+        <input type="number" id="valorAposta" value="10" min="1">
+    </div>
+    <div>
+        <label>Quantidade de Minas:</label>
+        <input type="number" id="quantidadeMinas" value="5" min="1" max="24">
+    </div>
+    <div class="info">Multiplicador: <span id="multiplicador">1.00</span>x</div>
+    <button onclick="iniciarJogo()">Novo Jogo</button>
+    <button onclick="retirar()">Retirar</button>
+    <div class="container">
+        <div class="grid" id="grid"></div>
+    </div>
+    <script>
+        let saldo = 200;
+        let multiplicador = 1.0;
+        let gridSize = 5 * 5;
+        let minas = [];
+        let jogoAtivo = false;
+        let aposta = 10;
+        let quantidadeMinas = 5;
+        
+        function iniciarJogo() {
+            aposta = parseInt(document.getElementById("valorAposta").value);
+            quantidadeMinas = parseInt(document.getElementById("quantidadeMinas").value);
+            
+            if (saldo < aposta) {
+                alert("Saldo insuficiente!");
+                return;
+            }
+            saldo -= aposta;
+            multiplicador = 1.0 + (quantidadeMinas * 0.1);
+            minas = Array(gridSize).fill(false);
+            for (let i = 0; i < quantidadeMinas; i++) {
+                let pos;
+                do {
+                    pos = Math.floor(Math.random() * gridSize);
+                } while (minas[pos]);
+                minas[pos] = true;
+            }
+            jogoAtivo = true;
+            atualizarInterface();
+            renderizarGrid();
+        }
+
+        function revelarCelula(index) {
+            if (!jogoAtivo) return;
+            const celula = document.getElementById(`cell-${index}`);
+            if (minas[index]) {
+                celula.classList.add("mine");
+                celula.innerHTML = '<img src="imagens/mines3.png" alt="Explosão">';
+                alert("Você perdeu!");
+                jogoAtivo = false;
+            } else {
+                celula.classList.add("revealed");
+                celula.innerHTML = '<img src="imagens/mines2.png" alt="Moeda">';
+                multiplicador += 0.2;
+                atualizarInterface();
+            }
+        }
+
+        function retirar() {
+            if (!jogoAtivo) return;
+            let ganho = aposta * multiplicador;
+            saldo += ganho;
+            alert(`Você retirou ${ganho.toFixed(2)} reais!`);
+            jogoAtivo = false;
+            atualizarInterface();
+        }
+
+        function atualizarInterface() {
+            document.getElementById("saldo").innerText = saldo.toFixed(2);
+            document.getElementById("multiplicador").innerText = multiplicador.toFixed(2);
+        }
+
+        function renderizarGrid() {
+            const grid = document.getElementById("grid");
+            grid.innerHTML = "";
+            for (let i = 0; i < gridSize; i++) {
+                const celula = document.createElement("div");
+                celula.classList.add("cell");
+                celula.id = `cell-${i}`;
+                celula.innerHTML = '<img src="imagens/mines1.png" alt="Bloco">';
+                celula.onclick = () => revelarCelula(i);
+                grid.appendChild(celula);
+            }
+        }
+    </script>
+</body>
+</html>

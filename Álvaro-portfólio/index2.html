@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagens2/favicon.ico" type="">
+    <title>Port-Álvaro</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="menu">
+                <span class="menubarra" onclick="abrirMenu()">☰</span>
+
+<div id="menuLateral" class="menu">
+  <a href="#" onclick="fecharMenu()">✖ Fechar</a>
+  <a href="index.html">Tema Preto</a>
+
+</div>
+
+<script>
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+  }
+
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+  }
+</script>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#sobremim">Sobre Mim</a></li>
+                    <li><a href="#experiencias">Experiencias</a></li>
+                    <li><a href="#trabalhos">Trabalhos</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#historia">Historias</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </nav>
+
+            <div class="contato">
+                <p>CONTATO</p>
+                <div class="social">
+                    <div class="instagram">
+                        <img src="imagens2/Instagram.png" alt="">
+                    </div>
+                    
+                    <div class="email">
+                        <img src="imagens2/Envelope.png" alt="">
+                    </div>
+
+                    <div class="whatsapp">
+                        <img src="imagens2/Telegram.png" alt="">
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </header>
+<style>
+    body{
+    display: flex;
+    margin: 0;
+    background-color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    position:fixed; 
+    background-color:#ffffff2a;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #000000;
+    font-weight: bold;
+    z-index: 1000;
+}
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 2px 40px;
+    color: #ffffff;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.menubarra {
+      font-size: 20px;
+      cursor: pointer;
+      padding: 17px;
+      position: fixed;
+      top: -6.5%;
+      left: 1%;
+      z-index: 2;
+      color:#000000;
+      height: 20px;
+      margin-left: 20px;
+    }
+
+    .menu {
+      height: 200%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #ffffff2f;
+      overflow-x: hidden;
+      transition: 0.4s;
+      padding-top: 60px;
+      z-index: 1;
+    }
+
+    .menu a {
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      display: block;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #c9c9c9;
+    }
+
+  .navbar{
+    width: 83%;
+    margin-left: 30px;
+  }
+  
+  .navbar ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .navbar ul li {
+    margin: 15px;
+    margin-bottom: 20px;
+  }
+   .navbar li a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    padding: 6px 10px;
+    font-size: 17px;
+   }
+
+   .navbar a {
+    position: relative; 
+}
+
+.navbar a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+  .contato{
+    display: flex;
+    margin-right: 1%;
+  }
+
+  .social{
+    display: flex;
+    margin-right: 1%;
+    margin-left: 20px;
+    margin-top: 13px;
+    gap: 15px;
+  }
+
+  .social img{
+  transition: transform 0.3s ease;
+    }
+
+    .social img:hover {
+        transform: scale(1.1);
+    }
+
+p{
+    color: #000000;
+}
+</style>
+<!-------------------------------------------------------------------------------- HEADER-------------------------->
+
+
+<!-------------------------------------------------------------------------------- LAYOUT-------------------------->
+<div class="conteiner">
+    <div class="imagem1">
+        <img src="imagens2/background1.png" alt="">
+    </div>
+</div>
+<style>
+    .conteiner {
+        max-width: 100%;
+        display: grid;
+    }
+
+    .imagem1 img {
+        width: 100%;
+        display: block;
+    }
+
+    p {
+        color: black;
+    }
+
+    h1 {
+        color: black;
+    }
+</style>
+
+<div class="sobremim">
+    <h2 id="sobremim">....................... </h2>
+
+    <h1>SOBRE MIM</h1>
+    <p>Meu nome é Álvaro Guedes, nasci em Caetité e hoje moro em Malhada, na Bahia.
+        Desde muito novo, sempre tive uma conexão forte com a arte — 
+        como se ela falasse comigo de um jeito que mais ninguém conseguia. 
+        Estar no mercado das artes é mais do que uma escolha de carreira,
+         é um caminho natural que sigo há muito tempo, quase como se já estivesse traçado desde o começo. 
+         Desenhar, editar, criar... tudo isso sempre me atraiu, e eu nunca precisei forçar nada: a arte me encontra onde eu estiver.
+       </p>
+
+    <img src="imagens2/eu.png" alt="">
+</div>
+
+<div class="vetor1">
+    <img src="imagens2/Vector.png" alt="">
+</div>
+
+<div class="vetor2">
+    <img src="imagens2/Vector.png" alt="">
+</div>
+
+<div class="vetor3">
+    <img src="imagens2/Vector.png" alt="">
+</div>
+
+<div class="vetor4">
+    <img src="imagens2/Vector.png" alt="">
+</div>
+
+<div class="sun1">
+    <img src="imagens2/sun1.png" alt="">
+</div>
+
+<div class="sun2">
+    <img src="imagens2/sun2.png" alt="">
+</div>
+
+<div class="sun3">
+    <img src="imagens2/sun3.png" alt="">
+</div>
+
+<div class="hash">
+    <img src="imagens2/hash.png" alt="">
+</div>
+
+<div class="eu">
+    <img src="imagens2/euzin.png" alt="">
+</div>
+
+<div class="happy">
+    <img src="imagens2/happy.png" alt="">
+</div>
+
+<div class="papel">
+    <img src="imagens2/papel.png" alt="">
+</div>
+
+<div class="vetor5">
+    <img src="imagens2/Vector.png" alt="">
+</div>
+
+<div class="vetor6">
+    <img src="imagens2/Vector.png" alt="">
+</div>
+
+<style>
+    .sobremim h2 {
+        position: absolute;
+        top: 102%;
+        right: 1%;
+        width: 80%;
+        opacity: 0;
+    }
+
+    .sobremim img {
+        display: block;
+        position: absolute;
+        width: 600px;
+        margin-top: 1660px;
+        margin-left: -1450px;
+        width: 620px;
+        transition: transform 0.2s;
+    }
+
+    .sobremim img:hover {
+        transform: scale(1.01);
+    }
+
+    .sobremim {
+        width: 0;
+    }
+
+    .sobremim p {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 1790px;
+        left: 52%;
+        width: 590px;
+        font-size: 21px;
+        text-align: justify;
+        color: black;
+    }
+
+    .sobremim h1 {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 1700px;
+        left: 63%;
+        width: 80%;
+        font-size: 45px;
+        color: black;
+    }
+
+    .vetor1 {
+        position: absolute;
+        left: 27%;
+        top: 34%;
+    }
+
+    .vetor2 {
+        position: absolute;
+        left: 58.4%;
+        top: 59%;
+    }
+
+    .vetor2 img {
+        width: 40px;
+    }
+
+    .vetor3 {
+        position: absolute;
+        left: 82.3%;
+        top: 39%;
+    }
+
+    .vetor3 img {
+        width: 52px;
+    }
+
+    .vetor4 {
+        position: absolute;
+        left: 85.6%;
+        top: 45%;
+    }
+
+    .vetor4 img {
+        width: 20px;
+    }
+
+    .vetor5 {
+        position: absolute;
+        left: 50.6%;
+        top: 136.8%;
+    }
+
+    .vetor5 img {
+        width: 26px;
+    }
+
+    .vetor6 {
+        position: absolute;
+        left: 58.3%;
+        top: 140%;
+    }
+
+    .vetor6 img {
+        width: 12px;
+    }
+
+    .vetor1 img {
+        width: 70px;
+        animation: pulsar1 1.1s infinite alternate ease-in-out;
+    }
+
+    @keyframes pulsar1 {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1.6);
+        }
+    }
+
+    .vetor2 {
+        animation: pulsar1 2s infinite alternate ease-in-out;
+    }
+
+    .vetor3 {
+        animation: pulsar1 1.3s infinite alternate ease-in-out;
+    }
+
+    .vetor4 {
+        animation: pulsar1 1.4s infinite alternate ease-in-out;
+    }
+
+    .vetor5 {
+        animation: pulsar1 1.4s infinite alternate ease-in-out;
+    }
+
+    .vetor6 {
+        animation: pulsar1 1.6s infinite alternate ease-in-out;
+    }
+
+    .happy img {
+        width: 350px;
+        position: absolute;
+        top: 144.6%;
+        right: 11%;
+        animation: girar-pouco 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes girar-pouco {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(15deg);
+        }
+    }
+
+    .papel img {
+        width: 102.4%;
+        position: absolute;
+        top: 142.3%;
+        right: -0.9%;
+    }
+
+    .eu img {
+        position: absolute;
+        width: 740px;
+        left: 34.5%;
+        top: 68.2%;
+    }
+
+    .sun1 img {
+        position: absolute;
+        width: 360px;
+        left: 37%;
+        top: 130%;
+        animation: girar-pouco 1.8s infinite alternate ease-in-out;
+    }
+
+    .sun2 img {
+        position: absolute;
+        width: 548px;
+        left: 18%;
+        top: 128%;
+        animation: girar-pouco 2.3s infinite alternate ease-in-out;
+    }
+
+    .sun3 img {
+        position: absolute;
+        width: 470px;
+        left: 57%;
+        top: 90%;
+        animation: girar-pouco 2s infinite alternate ease-in-out;
+    }
+
+    .hash img {
+        position: absolute;
+        width: 190px;
+        left: 77%;
+        top: 177%;
+        animation: girar-pouco 1.7s infinite alternate ease-in-out;
+    }
+
+    @keyframes girar-pouco {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(7deg); }
+    }
+</style>
+
+<div class="experiencias exp" >
+    <h2  id="experiencias">.............</h2>
+    <h1 >EXPERIENCIAS</h1>
+    <P>Com o passar dos anos, fui explorando ferramentas e me aprofundando cada vez mais. 
+        Tenho bastante experiência com Photoshop, After Effects e Illustrator, ferramentas que me ajudam a transformar 
+        ideias em imagem e movimento. Além disso, trabalho com o Pacote Office com muita facilidade, algo essencial no dia a dia. 
+        Em termos de edição mais leve e criação de conteúdo ágil, CapCut e Canva são aliados importantes nos meus processos criativos.
+         E quando o assunto é design de interface e experiência do usuário, me viro muito bem com o Figma. 
+         Cada um desses aplicativos me permite expressar um pedaço diferente do que eu sou e do que eu quero mostrar para o mundo.
+        </P>
+
+    <img src="imagens2/experiencias.png" alt="">
+</div>
+<style>
+    .experiencias{
+    width:0;
+}
+
+.experiencias h2{
+    display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 284%;
+        right: 1%;
+        width: 80%;
+        font-size: 45px;
+        opacity: 0;
+}
+
+.experiencias h1{
+    display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 316%;
+        right: 1%;
+        width: 80%;
+        font-size: 45px;
+        color: #000000;
+}
+
+.experiencias p{
+    display: flex; 
+    position: absolute;
+    top: 327%;
+    left: 9%;
+    width: 667px;
+    font-size: 21px;
+    text-align: justify;
+}
+
+.experiencias img{
+    display: block;
+    position: absolute;
+    width: 600px;
+    top: 312%;
+    left: 58%;
+    width: 460px; 
+}
+
+</style>
+
+
+
+
+
+
+<div class="hobbies">
+<h2 id="hobbies">...............</h2>
+
+    <h1>HOBBIES</h1>
+    <P>A música sempre foi parte da minha vida. Não foi algo que aprendi por obrigação ou por tendência — foi algo natural, como se os instrumentos me escolhessem. Hoje, eu toco seis instrumentos musicais: violão, guitarra, cavaco, ukulele, bateria, teclado e arranho na sanfona. Cada um deles me conecta com uma emoção diferente. Às vezes, eu quero algo calmo e introspectivo — pego o violão. Outras vezes, preciso liberar energia — vou direto pra bateria.
+        Tocar é mais do que saber notas e ritmos, é sentir. É transformar o que eu estou vivendo em som. A música me equilibra, me inspira, e muitas vezes até me ajuda no processo criativo nas artes visuais também.
+    </P>
+
+    <img src="imagens/hobbies-1.gif" alt="1">
+
+    <div class="hobbies2">
+        <P>Correr se tornou um hábito essencial na minha vida. Não apenas pelo lado físico, mas principalmente pelo mental. É durante a corrida que eu organizo meus pensamentos, respiro melhor, e me reconecto comigo mesmo. Coloco os fones, escolho uma boa playlist, e simplesmente vou.
+            A sensação de liberdade que a corrida me dá é única. É como se cada quilômetro me deixasse mais leve, mais claro, mais preparado pra voltar e criar algo novo.
+           </P>
+       <img src="imagens/hobbies-2.gif" alt="2">
+    </div>
+</div>
+<style>
+    .hobbies{
+    width:0;
+}
+
+.hobbies h2{
+        position: absolute;
+        top: 608%;
+        right: 1%;
+        width: 80%;
+        opacity: 0;
+}
+
+.hobbies h1{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 616%;
+    left: 42%;
+    width: 80%;
+    font-size: 53px;
+    color: #000000;
+}
+
+.hobbies p{
+    display: flex;
+    position: absolute;
+    top: 629%;
+    left: 9%;
+    width: 740px;
+    font-size: 21px;
+    text-align: justify;
+}
+
+.hobbies img{
+    display: block;
+    position: absolute;
+    width: 600px;
+    top: 632%;
+    left: 60%;
+    width: 460px;
+    border-radius: 30px;
+}
+
+.hobbies2 img{
+    display: block;
+    position: absolute;
+    width: 600px;
+    top: 670%;
+    left: 9%;
+    width: 430px;
+    border-radius: 30px;
+}
+
+.hobbies2 p{
+    display: flex;
+    position: absolute;
+    top: 667%;
+    left: 40%;
+    width: 770px;
+    font-size: 21px;
+    text-align: justify;
+}
+
+</style>
+
+
+<div class="trabalhos">
+    <h2 id="trabalhos">.....................</h2>
+
+    <h1>TRABALHOS</h1>
+    <P>AQUI, VOCÊ PODE ACOMPANHAR MEUS TRBALHOS, MINAHS ARTES E PUBLICIADES PARA EMPRESAS!</P>
+
+    <img src="imagens/trabalhos.png" alt="">
+</div>
+
+<style>
+
+.trabalhos h2{
+        position: absolute;
+        top: 377%;
+        right: 1%;
+        width: 80%;
+        opacity: 0;
+}
+
+.trabalhos h1{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 388%;
+    left: 40%;
+    width: 80%;
+    font-size: 53px;
+    color: #000000;
+}
+
+.trabalhos p{
+    display: flex;
+    position: absolute;
+    top: 401%;
+    left: 23%;
+    width: 82%;
+    font-size: 21px bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.trabalhos img{
+    display: block;
+    position: absolute;
+    top: 409%;
+    left: -1.5%;
+    width: 103%;
+    border-radius: 30px;
+}
+
+</style>
+
+<div class="historia">
+<h2 id="historia">.............</h2>
+
+    <h1>HISTORIA</h1>
+    <P>Uma vez, fui convidado para fazer a identidade visual de um evento cultural que ia acontecer
+        em uma cidade vizinha. Aceitei o desafio, mas só depois descobri que teria menos de 48 horas
+        para entregar tudo: logo, vídeo, cartazes, e até mesmo uma apresentação interativa. Foi tenso,
+        mas ao mesmo tempo instigante. Trabalhei sem parar, tomando café e ouvindo música o tempo todo.
+        No fim, entreguei tudo no prazo. Quando vi as pessoas entrando no evento e sendo impactadas pelo
+        que eu criei — o vídeo na entrada, os cartazes nas paredes, a arte no telão — foi como se eu tivesse 
+        colocado um pedacinho de mim ali. Foi ali que percebi que não era só um trabalho, era uma forma de transformar 
+        o mundo ao meu redor.Desde pequeno, aprendeu que a vida é feita de batalhas e que cada queda é apenas uma oportunidade
+        de se levantar mais forte. Cresceu em uma cidade pequena, cercado por montanhas e pelo céu infinito, onde sonhava em conquistar o mundo. 
+        Mas a realidade era dura, e os desafios pareciam sempre maiores do que ele.
+   </P>
+</div>
+
+<style>
+
+.historia h2{
+    position: absolute;
+    top: 697%;
+    right: 1%;
+    width: 80%;
+    opacity: 0;
+}
+
+.historia h1{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 720%;
+    left: 40%;
+    width: 80%;
+    font-size: 53px;
+    color: #000000;
+}
+
+.historia p{
+    display: flex;
+    position: absolute;
+    top: 736%;
+    left: 9%;
+    width: 82%;
+    font-size: 21px;
+    text-align: justify;
+}</style>
+
+<div class="links">
+    <h2 id="links">................</h2>
+
+    <img src="imagens2/contato.png" alt="">
+    <nav class="linksnav">
+        <ul>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrkftjcVJGvJdHvSRXvZZwdxSlKLPGwKZDbxwrGbdldwknJnLbGghwdvcmHBhvZxTnPL">E-MAIL</a></li>
+            <li><a href="https://web.whatsapp.com/">WHATSAPP</a></li>
+            <li><a href="https://www.instagram.com/">INSTAGRAM</a></li>
+            <li><a href="https://github.com/alvarogmkk">GITHUB</a></li>
+            <li><a href="https://www.behance.net/">BEHANCE</a></li>
+        </ul>
+        <textarea name="message" style="width:380px; height:120px;"> "Mande uma mensagem diretamente para mim!"</textarea>
+    </nav>
+</div>
+
+<style>
+    .links h2 {
+        position: absolute;
+        top: 770%;
+        right: 1%;
+        width: 80%;
+        opacity: 0;
+    }
+
+    .links h1 {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 715%;
+        left: 23%;
+        width: 80%;
+        font-size: 53px;
+        color: #000000;
+    }
+
+    .links p {
+        display: flex;
+        position: absolute;
+        top: 730%;
+        left: 9%;
+        width: 43%;
+        font-size: 21px;
+        text-align: justify;
+    }
+
+    .links img {
+        display: block;
+        position: absolute;
+        top: 787%;
+        left: 10%;
+        width: 80%;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.236);
+    }
+
+    textarea{
+        position: absolute;
+        background-color: #ffffff;
+        border-color: #00000000;
+        color: rgba(0, 0, 0, 0.359);
+        top: 832%;
+        left: 59.3%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .linksnav ul {
+        display: flex;
+        flex-direction: column; 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 799%;
+        left: 72%;
+        transform: translateX(-50%);
+    }
+
+    .linksnav li {
+        margin-bottom: 2px;
+    }
+
+    .linksnav a {
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #727272;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        padding: 6px 10px;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0);
+        width: 360px;
+    }
+
+    .linksnav a:hover {
+        background-color: rgba(255, 255, 255, 0.095);
+    }
+
+    .linksnav a::after {
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .linksnav a:hover::after {
+        width: 100%;
+    }
+</style>
+
+
+
+
+<div class="footer">
+    <div class="rodape">
+        <h1> Copyright &copy; 2024 ALVARO GUEDES. TODOS OS DIREITOS RESERVADOS.</h1>
+
+        <div class="contato2">
+            <p>CONTATO</p>
+            <div class="social2">
+                <div class="instagram">
+                    <img src="imagens2/Instagram.png" alt="Instagram">
+                </div>
+                
+                <div class="email">
+                    <img src="imagens2/Envelope.png" alt="Email">
+                </div>
+
+                <div class="whatsapp">
+                    <img src="imagens2/Telegram.png" alt="Telegram">
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+<style>
+    
+    
+    .footer {
+        position: absolute;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 20px 0;
+        width: 100%;
+        top: 870%;
+        font-weight: bold;
+
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .rodape h1 {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .contato2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .contato2 p {
+        margin: 0 15px 0 0;
+        font-size: 16px;
+    }
+
+    .social2 {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social2 img {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease;
+    }
+
+    .social2 img:hover {
+        transform: scale(1.1);
+    }
+
+</style>
+
+</body>
+</html>
+
+<!-- ffff00, 2f6347 -->

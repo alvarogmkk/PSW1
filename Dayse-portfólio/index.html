@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- <script src="https://unpkg.com/scrollreveal" defer></script>
+   <script src="reveal.js" defer></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="">
+    <title>Port-Álvaro</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="menu">
+                <span class="menubarra" onclick="abrirMenu()">☰</span>
+
+<!-- Menu Lateral -->
+<div id="menuLateral" class="menu">
+  <a href="#" onclick="fecharMenu()">✖ Fechar</a>
+  <a href="index2.html">Tema branco</a>
+
+</div>
+
+<script>
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+  }
+
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+  }
+</script>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#sobremim">Sobre Mim</a></li>
+                    <li><a href="#experiencias">Experiencias</a></li>
+                    <li><a href="#trabalhos">Trabalhos</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#historia">Historias</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </nav>
+
+            <div class="contato">
+                <p>CONTATO</p>
+                <div class="social">
+                    <div class="instagram">
+                        <img src="image/Instagram.png" alt="">
+                    </div>
+                    
+                    <div class="email">
+                        <img src="image/Envelope.png" alt="">
+                    </div>
+
+                    <div class="whatsapp">
+                        <img src="image/Telegram.png" alt="">
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </header>
+<style>
+    body{
+    display: flex;
+    margin: 0;
+    background-color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    position:fixed; /* Mantém o header fixo na página */
+    background-color:#ffffff00;
+    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
+    top: 0; /* Fixa o header no topo da janela */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Faz o header ocupar toda a largura da janela */
+    color: #000000; /* Texto branco */
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 2px 40px;
+    color: #000000;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.menubarra {
+      font-size: 20px;
+      cursor: pointer;
+      padding: 17px;
+      position: fixed;
+      top: -6.5%;
+      left: 1%;
+      z-index: 2;
+      color:#d83cff;
+      height: 20px;
+      margin-left: 20px;
+    }
+
+    .menu {
+      height: 200%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #00000000;
+      overflow-x: hidden;
+      transition: 0.4s;
+      padding-top: 60px;
+      z-index: 1;
+    }
+
+    .menu a {
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #8d25a7;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #c9c9c964;
+    }
+
+  .navbar{
+    width: 83%;
+    margin-left: 30px;
+  }
+  
+  .navbar ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .navbar ul li {
+    margin: 15px;
+    margin-bottom: 20px;
+  }
+   .navbar li a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #8d25a7;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    padding: 6px 10px;
+    font-size: 17px;
+   }
+
+   .navbar a {
+    position: relative; /* Necessário para que ::after funcione */
+}
+
+.navbar a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #8d25a7;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after{/* Removido o espaço antes de ::after */
+    width: 100%;
+}
+  .contato{
+    display: flex;
+    margin-right: 1%;
+  }
+
+  .social{
+    display: flex;
+    margin-right: 1%;
+    margin-left: 20px;
+    margin-top: 13px;
+    gap: 15px;
+  }
+
+  .social img{
+  transition: transform 0.3s ease;
+    }
+
+    .social img:hover {
+        transform: scale(1.1);
+    }
+
+p{
+    color: #8d25a7;
+}
+</style>
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+<div class="conteiner">
+    <div class="imagem1">
+        <img src="image/background1.png" alt="">
+    </div>
+</div>
+<style>
+        .conteiner{
+            position: relative;
+        max-width: 100%;
+        display: grid;
+    }
+
+    .imagem1 img{
+        width: 100%;
+        display: block;
+    }
+</style>
+
+
+<div class="sobremim">
+    <h2 id="sobremim">....................... </h2>
+
+    <h1>SOBRE MIM</h1>
+    <p>
+ Nascida em São Paulo, mas criada em Carinhanha, Bahia, sou Dayse Kelly, uma mulher apaixonada 
+        por desafios e experiências novas. Desenvolvi habilidades em diversas áreas, como tocar violão,
+         teatro, balé, Libras e capoeira. Como delegada nacional, participo de políticas públicas e 
+         contribuo para o desenvolvimento da sociedade. A leitura e a natureza são minhas paixões. 
+         Busco sempre novos desafios e oportunidades para aplicar meus conhecimentos e habilidades.</p>
+
+    <img src="image/euzin.png" alt="">
+</div>
+
+        <div class="vetor1">
+            <img src="image/vetor.png" alt="">
+        </div>
+
+        <div class="vetor2">
+            <img src="image/vetor.png" alt="">
+        </div>
+
+        <div class="vetor3">
+            <img src="image/vetor.png" alt="">
+        </div>
+
+        <div class="vetor4">
+            <img src="image/vetor.png" alt="">
+        </div>
+
+
+
+
+<div class="sun1">
+    <img src="imagens/sun1.png" alt="">
+</div>
+
+<div class="sun2">
+    <img src="imagens/sun2.png" alt="">
+</div>
+
+<div class="sun3">
+    <img src="imagens/sun3.png" alt="">
+</div>
+
+<div class="happy">
+    <img src="imagens/happy.png" alt="">
+</div>
+
+<div class="papel">
+    <img src="imagens/papel.png" alt="">
+</div>
+
+        <div class="vetor5">
+            <img src="image/vetor.png" alt="">
+        </div>
+
+        <div class="vetor6">
+            <img src="image/vetor.png" alt="">
+        </div>
+
+        <div class="vetor7">
+            <img src="image/Vetor.png" alt="">
+        </div>
+
+<style>
+
+.sobremim h2{
+        position: absolute;
+        top: 102%;
+        right: 1%;
+        width: 80%;
+        opacity: 0;
+}
+
+       .sobremim img{
+        display: block;
+        position: absolute;
+        margin-top: 106%;
+        left: 7%;
+        width: 580px;
+        transition: transform 0.2s;
+    }
+
+    .sobremim img:hover{
+        transform: scale(1.01);
+    }
+
+    .sobremim{
+        width:0;
+    }
+
+    .sobremim p{
+    display: flex; /* Ativa o layout flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaçamento entre o texto e a imagem */
+    position: absolute;
+    top: 1790px;
+    left: 52%;
+    width: 590px;
+    font-size: 21px;
+    text-align: justify;
+    color: #000000;
+}
+
+    .sobremim h1{
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 1700px;
+        left: 63%;
+        width: 80%;
+        font-size: 45px;
+        color: #000000;
+    }
+    .vetor1{ 
+        position: absolute;
+        left: 17%;
+        top: 63%;
+    }
+
+    .vetor2{ 
+        position: absolute;
+        left: 21.7%;
+        top: 72%;
+    }
+    .vetor2 img{
+        width: 25px; 
+    }
+
+    .vetor3{ 
+        position: absolute;
+        left: 78.5%;
+        top: 35%;
+    }
+
+    .vetor3 img{
+        width: 92px;
+    }
+
+    .vetor4{ 
+        position: absolute;
+        left: 46%;
+        top: 115%;
+    }
+
+    .vetor4 img{
+        width: 100px;
+    }
+
+    .vetor5{ 
+        position: absolute;
+        left: 12.6%;
+        top: 146%;
+    }
+
+    .vetor5 img{
+        width: 140px;
+    }
+
+    .vetor6{ 
+        position: absolute;
+        left: 93.3%;
+        top: 176%;
+    }
+
+    .vetor6 img{
+        width: 32px;
+    }
+
+    .vetor7{ 
+        position: absolute;
+        left: 90.3%;
+        top: 180%;
+    }
+
+    .vetor7 img{
+        width: 52px;
+        
+    }
+
+    .vetor1 img{
+        width: 70px;
+        animation: girar-pouco1 1.5s infinite alternate ease-in-out;
+        }
+
+        @keyframes girar-pouco1 {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(10deg); }
+        }
+
+        .vetor2{
+            animation: girar-pouco1 2s infinite alternate ease-in-out;
+        }
+
+        .vetor3{
+            animation: girar-pouco1 1.6s infinite alternate ease-in-out;
+        }
+
+        .vetor4{
+            animation: girar-pouco1 1.4s infinite alternate ease-in-out;   
+        }
+
+        .vetor5{
+            animation: girar-pouco1 1.4s infinite alternate ease-in-out;   
+        }
+
+        .vetor6{
+            animation: girar-pouco1 1.6s infinite alternate ease-in-out;   
+        }
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+.happy img{
+        width: 350px;
+        position: absolute;
+        top: 144.6%;
+        right: 11%;
+        animation: girar-pouco 2.3s infinite alternate ease-in-out;
+        }
+
+        @keyframes girar-pouco {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(10deg); }
+        }
+
+.papel img{
+        width: 102.4%;
+        position: absolute;
+        top: 142.3%;
+        right: -0.9%;
+    }
+
+.eu img{ 
+        position: absolute;
+        width: 720px;
+        left: 35.5%;
+        top: 5%;
+    }
+
+.sun1 img{
+    position: absolute;
+    width: 360px;
+    left: 37%;
+    top: 130%;
+    animation: girar-pouco 2s infinite alternate ease-in-out;
+        }
+
+        @keyframes girar-pouco {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(15deg); }
+        }
+
+.sun2 img{
+    position: absolute;
+    width: 548px;
+    left: 18%;
+    top: 128%;
+    animation: girar-pouco 2.6s infinite alternate ease-in-out;
+        }
+
+        @keyframes girar-pouco {
+            0% { transform: rotate(8deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+.sun3 img{
+    position: absolute;
+    width: 470px;
+    left: 57%;
+    top: 90%;
+    animation: girar-pouco 2.3s infinite alternate ease-in-out;
+        }
+
+        @keyframes girar-pouco {
+            0% { transform: rotate(10deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+.hash img{
+    position: absolute;
+    width: 190px;
+    left: 77%;
+    top: 177%;
+    animation: girar-pouco 2.3s infinite alternate ease-in-out;
+        }
+
+        @keyframes girar-pouco {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(7deg); }
+        }
+
+/* ------------------------------------------------------------------------------------------------- */
+
+</style>
+
+
+<div class="experiencias">
+
+    <h2  id="experiencias">.............</h2>
+        <h1 >EXPERIENCIAS</h1>
+        <P>Aqui estão alguns dos meus certificados e habilidades que demonstram minha expertise e dedicação em diversas áreas:</P>
+
+    <div class="carrosel">
+        <div class="imagens" id="imagens">
+        <div class="imagens"><img src="image/1.jpg" alt="Gato 1"></div>
+        <div class="imagens"><img src="image/2.jpg" alt="Gato 2"></div>
+        <div class="imagens"><img src="image/3.jpg" alt="Gato 3"></div>
+        <div class="imagens"><img src="image/4.jpg" alt="Gato 3"></div>
+        <div class="imagens"><img src="image/5.jpg" alt="Gato 3"></div>
+        <div class="imagens"><img src="image/6.jpg" alt="Gato 3"></div>
+        <div class="imagens"><img src="image/7.jpg" alt="Gato 3"></div>
+        <div class="imagens"><img src="image/8.jpg" alt="Gato 3"></div>
+        <div class="imagens"><img src="image/9.jpg" alt="Gato 3"></div>
+        <div class="imagens"><img src="image/10.jpg" alt="Gato 3"></div>
+        </div>
+    
+        <div class="botoes">
+        <button onclick="voltar()">❮</button>
+        <button onclick="avancar()">❯</button>
+        </div>
+    </div>
+</div>
+  <script>
+    let index = 0;
+  
+    function mostrarSlide(i) {
+      const imagens = document.getElementById('imagens');
+      const totalSlides = imagens.children.length;
+      index = (i + totalSlides) % totalSlides;
+      imagens.style.transform = `translateX(-${index * 100}%)`;
+    }
+  
+    function avancar() {
+      mostrarSlide(index + 1);
+    }
+  
+    function voltar() {
+      mostrarSlide(index - 1);
+    }
+      setInterval(() => {
+      avancar();
+    }, 4000);
+  </script>
+
+<style>
+.carrosel {
+    position: absolute;
+    height: 300px;
+    width: 30%;
+    overflow: hidden;
+    top: 324%;
+    right: 9%;
+  }
+  .experiencias h2{
+    display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 284%;
+        right: 1%;
+        width: 80%;
+        font-size: 45px;
+        opacity: 0;
+}
+
+.experiencias h1{
+    display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 316%;
+        right: 1%;
+        width: 80%;
+        font-size: 45px;
+        color: #000000;
+}
+
+.experiencias p{
+    display: flex; /* Ativa o layout flexível */
+    position: absolute;
+    top: 327%;
+    left: 9%;
+    width: 667px;
+    font-size: 21px;
+    color: #000000;
+    text-align: justify;
+}
+
+  .imagens {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .imagens {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .imagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .botoes {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+  }
+
+  .botoes button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 25px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="hobbies">
+    <h2 id="hobbies">...............</h2>
+    
+        <h1>HOBBIES</h1>
+        <P>Gosto de praticar capoeira, uma atividade que me permite c
+            ombinar movimento, música e expressão. Além disso, tenho um forte compromisso 
+            com políticas públicas e desenvolvimento social, e também gosto de praticar e compartilhar a Língua B
+            rasileira de Sinais (Libras) como uma forma de comunicação inclusiva e eficaz.
+             A auto-reflexão e a comunicação comigo mesma também são fundamentais para mim, 
+             permitindo-me crescer e me desenvolver como pessoa.</P>
+        <img src="image/hobbies-1.gif" alt="1">
+    </div>
+    <style>
+        .hobbies{
+        width:0;
+    }
+    
+    .hobbies h2{
+            position: absolute;
+            top: 378%;
+            right: 1%;
+            width: 80%;
+            opacity: 0;
+    }
+    
+    .hobbies h1{
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 388%;
+        left: 42%;
+        width: 80%;
+        font-size: 53px;
+        color: #000000;
+    }
+    
+    .hobbies p{
+        display: flex;
+        position: absolute;
+        top: 403%;
+        left: 9%;
+        width: 740px;
+        font-size: 21px;
+        text-align: justify;
+        color: #000000;
+    }
+    
+    .hobbies img{
+        display: block;
+        position: absolute;
+        width: 600px;
+        top: 406%;
+        left: 60%;
+        width: 460px;
+        border-radius: 30px;
+    }
+    
+    .hobbies2 img{
+        display: block;
+        position: absolute;
+        width: 600px;
+        top: 447%;
+        left: 9%;
+        width: 430px;
+        border-radius: 30px;
+    }
+    
+    .hobbies2 p{
+        display: flex;
+        position: absolute;
+        top: 443%;
+        left: 40%;
+        width: 770px;
+        font-size: 21px;
+        text-align: justify;
+    }
+    
+    </style>
+
+<div class="historia">
+    <h2 id="historia">.............</h2>
+    
+    <div class="galeria">
+        <img src="image/g1.jpg" alt="Foto 1">
+        <img src="image/g2.jpg" alt="Foto 2">
+        <img src="image/g4.jpg" alt="Foto 4">
+        <img src="image/g5.jpg" alt="Foto 5">
+        <img src="image/g6.jpg" alt="Foto 5">
+        <img src="image/g7.jpg" alt="Foto 5">
+      </div>
+
+        <h1>HISTORIA</h1>
+        <P>Era um dia especial, não apenas porque estava apresentando uma peça de teatro na escola, mas também porque era o Dia do Direito da Criança e do Adolescente. A energia no ar era palpável, e eu me sentia inspirada a fazer a diferença. Foi então que algo inesperado aconteceu: fui indicada para representar os adolescentes do município em uma eleição.
+
+            Sempre fui apaixonada por história e políticas públicas, e senti que era meu dever estar ali, representando da melhor forma possível, não apenas a minha voz, mas a de todos os adolescentes que acreditavam em mim. Através da apresentação de projetos inovadores e da minha habilidade de comunicação eficaz, consegui ser eleita.</P>
+    </div>
+    
+    <style>
+
+    .historia h2{
+        position: absolute;
+        top: 439%;
+        right: 1%;
+        width: 80%;
+        opacity: 0;
+    }
+    
+    .historia h1{
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 449%;
+        left: 40%;
+        width: 80%;
+        font-size: 53px;
+        color: #000000;
+    }
+    
+    .historia p{
+        display: flex;
+        position: absolute;
+        top: 465%;
+        left: 9%;
+        width: 82%;
+        font-size: 21px;
+        text-align: justify;
+        color: #000000;
+        
+    }
+    
+    .galeria {
+    position: absolute;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    gap: 15px;
+    top: 503%;
+    right: 9%;
+    }
+
+    .galeria img {
+    width: 194px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+    transform: scale(1.05);
+    }
+
+
+    </style>
+    
+    <div class="links">
+        <h2 id="links">................</h2>
+    
+        <img src="image/contato.png" alt="">
+        <nav class="linksnav">
+            <ul>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrkftjcVJGvJdHvSRXvZZwdxSlKLPGwKZDbxwrGbdldwknJnLbGghwdvcmHBhvZxTnPL">E-MAIL</a></li>
+                <li><a href="https://web.whatsapp.com/">WHATSAPP</a></li>
+                <li><a href="https://www.instagram.com/">INSTAGRAM</a></li>
+                <li><a href="https://github.com/alvarogmkk">GITHUB</a></li>
+                <li><a href="https://www.behance.net/">BEHANCE</a></li>
+            </ul>
+            <textarea name="message" style="width:380px; height:120px;"> "Mande uma mensagem diretamente para mim!"</textarea>
+        </nav>
+    </div>
+    
+    <style>
+        .links h2 {
+            position: absolute;
+            top: 597%;
+            right: 1%;
+            width: 80%;
+            opacity: 0;
+        }
+    
+        .links h1 {
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 597%;
+            left: 23%;
+            width: 80%;
+            font-size: 53px;
+            color: #000000;
+        }
+    
+        .links p {
+            display: flex;
+            position: absolute;
+            top: 597%;
+            left: 9%;
+            width: 43%;
+            font-size: 21px;
+            text-align: justify;
+            color: #000000;
+        }
+    
+        .links img {
+            display: block;
+            position: absolute;
+            top: 610%;
+            left: 10%;
+            width: 80%;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.236);
+        }
+    
+        textarea{
+            position: absolute;
+            background-color: #b1b1b1;
+            border-color: #ffffff00;
+            color: rgba(255, 255, 255, 0.359);
+            top: 655%;
+            left: 59.3%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .linksnav ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 622%;
+            left: 72%;
+            transform: translateX(-50%);
+        }
+    
+        .linksnav li {
+            margin-bottom: 2px;
+        }
+    
+        .linksnav a {
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #7b7b7b;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            padding: 6px 10px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0);
+            width: 360px;
+        }
+    
+        .linksnav a:hover {
+            background-color: rgba(255, 255, 255, 0.095);
+        }
+    
+        .linksnav a::after {
+            content: "";
+            width: 0%;
+            height: 4px;
+            background-color: #000000;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            transition: width 0.3s ease-in-out;
+        }
+    
+        .linksnav a:hover::after {
+            width: 100%;
+        }
+    </style>
+    
+    
+    
+    
+    <div class="footer">
+        <div class="rodape">
+            <h1> Copyright &copy; 2025 DAYSE KELLY RODRIGUES. TODOS OS DIREITOS RESERVADOS.</h1>
+    
+            <div class="contato2">
+                <p>CONTATO</p>
+                <div class="social2">
+                    <div class="instagram">
+                        <img src="image/Instagram.png" alt="Instagram">
+                    </div>
+                    
+                    <div class="email">
+                        <img src="image/Envelope.png" alt="Email">
+                    </div>
+    
+                    <div class="whatsapp">
+                        <img src="image/Telegram.png" alt="Telegram">
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <style>
+        
+        
+        /* Estilos para o footer fixo */
+        .footer {
+            position: absolute;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px 0;
+            width: 100%;
+            top: 690%;
+            font-weight: bold;
+    
+        }
+    
+        .rodape {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .rodape h1 {
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+    
+        .contato2 {
+            display: flex;
+            align-items: center;
+        }
+    
+        .contato2 p {
+            margin: 0 15px 0 0;
+            font-size: 16px;
+            color: #000000;
+        }
+    
+        .social2 {
+            display: flex;
+            gap: 15px;
+        }
+    
+        .social2 img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+    
+        .social2 img:hover {
+            transform: scale(1.1);
+        }
+    
+    </style>

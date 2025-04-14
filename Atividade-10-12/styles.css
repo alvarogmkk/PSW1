@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+    color: #ffffff;
+  }
+  
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #2b2b2b; 
+    padding: 0px 20px;
+    color: #ffffff;
+}
+  
+  .logo {
+    width: 20%;
+    height: 50px; 
+    margin-left: 1.5%;
+  }
+
+  .perfil{
+    margin-right: 1%;
+  }
+
+  .navbar{
+    width: 17%;
+  }
+  
+  .navbar ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .navbar ul li {
+    margin: 15px;
+    margin-bottom: 20px;
+  }
+   .navbar li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px; 
+   }
+   
+   .navbar li a:hover {
+   background-color:#4CAF50;
+   }
+
+  .pesquisa {
+        flex-grow: 1; /* Faz a barra ocupar o espaço necessário */
+        display: flex; /* Torna flexível para alinhar ícones e input */
+        justify-content: center; /* Centraliza o conteúdo */
+        align-items: center; /* Alinha verticalmente */
+    width: 100px;
+    margin: 10px 50px; /* Espaçamento entre navbar e ícone de perfil */
+  }
+  
+  .pesquisa input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px; 
+    border: 1px solid #616161;
+    color: #ffffff;
+    background-color: #616161;
+    border-radius: 56px;
+  }
+
+  .pesquisa input::placeholder{
+    color: #c6c6c6;
+  }
+
+    .pesquisa svg{
+    width: 50px;
+    height: 30px;
+  }
+  
+     
+     /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* INDEX */
+     .tela1{
+      padding: 30px 4%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .tela1{
+      justify-content: center;
+      gap: 50px;
+  }
+  
+  .tela1 h1{
+      color: #4CAF50;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      font-weight: 1200;
+      margin: 0 0px;
+  }
+  
+  .tela1 .texto1 p{
+    text-align: justify;
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 17px;
+      margin: 30px 0px;
+      line-height: 1.6; 
+  }
+  
+  .tela3 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .imagem-index-3 img {
+    width: 800px;
+    margin-right: 56px;
+    margin-left:60px;
+  }
+  
+  .texto3 h1 {
+    margin-right: 40px;
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+  }
+  
+  .texto3 p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-right: 60px;
+  }
+
+  .tela4{
+    display: flex;
+    align-items: center;
+  }
+
+  .tela4 img{
+    height: 330px;
+    margin-left: 0px;
+    margin-right: 70px;
+    margin-top: 90px;
+    border-radius: 10px;
+  }
+
+  .tela4 .imagem-index-4{
+    margin-left: 58px;
+  }
+
+  .tela4 img:hover{
+    display: inline-block;
+    transform: scale(1.08);
+    transition: 0.30s;
+  }
+
+  .tela4 p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 70px;
+  }
+  
+  .tela4 .imagem-index-4 h5{
+    color: #4CAF50;
+    margin-top: 30px;
+    font-size: 23.4px;
+  }
+
+  .tela4 .imagem-index-5 h5{
+    color: #4CAF50;
+    margin-left: 70px;
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .tela4 .imagem-index-6 h5{
+    color: #4CAF50;
+    margin-top: 30px;
+    font-size: 21px;
+  }
+
+  .tela2{
+    padding: 30px 4%;
+    margin-top: 60px;
+  }
+  
+  .tela2 h1{
+    color: #4CAF50;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 1200;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .tela2 .texto2 p{
+    text-align: justify;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin: 30px 0px;
+    line-height: 1.6; 
+  
+  }
+    
+  .tela2 .imagem-index-2 img{
+  padding-top: 2%;
+  margin-left: -100px;
+  }
+
+  /* INDEX */
+  
+     /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  /* CADASTRO */
+  main {
+    padding: 3%;
+
+  }
+  
+  h2{
+    color: #ffffff;
+    padding: 50px;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  h3{
+    margin-top: 10px;
+    margin-bottom: 34px;
+  }
+
+  h4{
+    margin-left: 13.2%;
+    margin-top: -50px;
+  }
+
+.formulario form {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.esquerda, .direita {
+    width: 48%;
+}
+.esquerda input {
+    width: 80%;
+    margin-left: 25%;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    background-color: #616161;
+    color: #fff;
+}
+
+.esquerda input::placeholder {
+    color: #c6c6c6;
+}
+
+select{
+  margin-left: 25%;
+  width: 80%;
+}
+
+.esquerda label{
+  margin-left: 25%;
+}
+
+/* Checkboxes à direita */
+.direita {
+    background-color: #616161;
+    padding: 20px;
+    width: 400px;
+    margin-right: 15%;
+    border-radius: 8px;
+    margin-bottom: auto;
+    flex-direction: column;
+}
+.direita label{
+  margin-bottom: 6%;
+}
+
+.direita2{
+  display: flex;
+  flex-direction: column;
+}
+.direita2 {
+  background-color: #616161;
+  padding: 20px;
+  width: 400px;
+  margin-right: 15%;
+  border-radius: 8px;
+  margin-left: 56%;
+  margin-top: -430px;
+}
+.direita2 label{
+margin-bottom: 6%;
+}
+
+.checkbox-item {
+    display: flex; 
+    align-items: center; /* Alinha o texto e o checkbox verticalmente */
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 10px; /* Espaçamento entre o checkbox e o texto */
+    transform: scale(1.2); /* Deixa o checkbox maior */
+}
+
+
+
+.enviar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enviar input{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 120px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4%;
+}
+
+  label { 
+    display:block;
+    margin-bottom: 2%;
+    color: #ffffff;
+  }
+  
+  input, select {
+
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #616161;
+    color: #ffffff;
+    background-color: #616161;   
+    border-radius: 5px;
+    height: auto;
+   } 
+  
+  /* CADASTRO */
+  
+     /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  /* TABELA */
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50%;
+  }
+  
+  td, th {
+    border: 1px solid #2b2b2b;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #404040;
+  }
+  /* TABELA */
+  
+     /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  
+  
+     .rodape{
+      background-color:#2b2b2b;
+      color:#ffffff;
+      padding: 23px;
+      display: flex;
+      justify-content: center;
+      }
+
+      /* colocar resposividade */
+
+      /* http://localhost:8081/PSW1/PSW1/atividade-10-12/ */
